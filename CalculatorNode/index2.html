@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .calculator-form {
+        background-color: #444;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;
+        text-align: center;
+    }
+    .calculator-form h1 {
+        margin-bottom: 20px;
+    }
+    .form-input, .form-select, .form-button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+    }
+    .form-input {
+        background-color: #555;
+        color: white;
+    }
+    .form-select {
+        background-color: #666;
+        color: white;
+    }
+    .form-button {
+        background-color: #666;
+        color: white;
+        cursor: pointer;
+    }
+    .form-button:hover {
+        background-color: #777;
+    }
+</style>
+</head>
+<body>
+    <div class="calculator-form">
+        <h1>Calculator Form</h1>
+        <form action="/calc" method="post">
+            <input type="number" class="form-input" name="operand1" placeholder="Enter first number" required>
+            <input type="number" class="form-input" name="operand2" placeholder="Enter second number" required>
+            <select class="form-select" name="operator">
+                <option value="+">Add (+)</option>
+                <option value="-">Subtract (-)</option>
+                <option value="*">Multiply (*)</option>
+                <option value="/">Divide (/)</option>
+            </select>
+            <button type="submit" class="form-button">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>

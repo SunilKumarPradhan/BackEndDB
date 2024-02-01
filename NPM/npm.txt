@@ -1,0 +1,4 @@
+npm install <package name>
+
+npm adduser
+npm init -y

@@ -1,0 +1,15 @@
+{
+  "name": "learning_npm",
+  "version": "1.0.0",
+  "description": "agar aapke pc mein node insrtalled hain toh NPM bhi automatically installed hi hona chahiye",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sunil Kumar Pradhan",
+  "license": "ISC",
+  "dependencies": {
+    "sillyname": "^0.1.0"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculation Result</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .result-container {
+        background-color: #444;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;
+        text-align: center;
+    }
+    .result {
+        font-size: 24px;
+    }
+    .button-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #666;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .button-link:hover {
+        background-color: #777;
+    }
+</style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Calculation Result</h1>
+        <p class="result" style="color: {{resultColor}};">{{result}}</p>
+        <a href="/calc" class="button-link">Back to Calculator</a>
+    </div>
+</body>
+</html>

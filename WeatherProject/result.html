@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    .weather-report {
+      background-color: #444;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+      display: inline-block;
+    }
+    img {
+      margin-top: 20px;
+    }
+    .button-link {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #666;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .button-link:hover {
+        background-color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-report">
+    <h1>Weather in {{cityName}}</h1>
+    <p>Temperature: {{temp}}°C</p>
+    <p>Weather: {{description}}</p>
+    <p>Humidity: {{humidity}}%</p>
+    <p>Wind Speed: {{windSpeed}} m/s</p>
+    <p>Pressure: {{pressure}} hPa</p>
+    <img src="{{imgURL}}" alt="Weather Icon">
+    <p><a href="/" class="button-link">Back to Home</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "desisillynames",
+  "version": "1.0.0",
+  "description": "The \"Desi Silly Name Generator\" is a whimsical and engaging tool that playfully combines traditional Indian adjectives and nouns to create unique and amusing names. This generator offers a charming way to explore the colorful spectrum of Indian culture and language. With a vast array of adjectives that describe personality traits, attitudes, and styles, such as \"Jugaadu\" (resourceful) and \"Masaledar\" (spicy), and nouns that embody iconic cultural elements like \"Bollywood,\" \"Samosa,\" and \"Guru,\" the generator concocts names full of character and humor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunilKumarPradhan/NPM_Package.git"
+  },
+  "keywords": [
+    "Desi",
+    "DesiFunnyNames",
+    "SillyNames",
+    "MadeInIndia"
+  ],
+  "author": "sunilkumarpradhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SunilKumarPradhan/NPM_Package/issues"
+  },
+  "homepage": "https://github.com/SunilKumarPradhan/NPM_Package#readme",
+  "dependencies": {
+    "sillyname": "^0.1.0"
+  }
+}
