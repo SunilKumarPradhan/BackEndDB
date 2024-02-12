@@ -6,11 +6,16 @@
     <title>ToDoList</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    
 </head>
 <body>
-    
-<h1>Its a <%=kindOfDay%> </h1>
+
+<h1>It's a <%= kindOfDay %> </h1>
+
+<% if (kindOfDay === "Saturday" || kindOfDay === "Sunday") { %>
+    <h1 style="color: tomato;">It's a <%= kindOfDay %> </h1>
+<% } else { %>
+    <h1 style="color: turquoise;">It's a <%= kindOfDay %> </h1>
+<% } %>
 
 </body>
 </html>
