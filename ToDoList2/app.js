@@ -6,20 +6,20 @@ const port = 5500;
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 
-let items = ["Buy Food", "Cook Food", "Eat Food"]; // Renamed to 'items' to reflect it's a collection
+let items = ["Buy Food", "Cook Food", "Eat Food"]; 
 
-// to send a get request
 app.get('/', (req, res) => {
-    // This part just handles the current date of the day
-    let today = new Date();
-    let options = {
+    let today = new Date(); // var 1
+    let options = { // var 2 which is actally a list of options
         weekday: 'long',
         day: 'numeric',
         month: 'long'
     };
-    let day = today.toLocaleDateString('hi-IN', options);
 
-    res.render('list', {kindOfDay: day, newListItem: items}); // Pass 'items' to the template
+    let day = today.toLocaleDateString('en-US', options); // var 3 which tells the current date in a specific format
+
+    res.render('list', {kindOfDay: day, newListItem: items}); // upar ek list naam ka array hai jisme kuch items hain
+    // uss ko hum ek ejs variable ke through pass kar rahe hain
 });
 
 // to handle post request
