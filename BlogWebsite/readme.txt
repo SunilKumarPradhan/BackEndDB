@@ -1,0 +1,2 @@
+SHORTCUT : if you happen to have a package .json inside the directory then the node uses it as a requiremtent.txt and then, when you
+use 'npm i' thats it no module name or anything ,node will automaticall install all the requiremtents as it is .

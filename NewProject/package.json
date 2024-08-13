@@ -1,0 +1,14 @@
+{
+  "name": "newproject",
+  "version": "1.0.0",
+  "description": "A Node.js web application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.18",
+    "ejs": "^3.1.5"
+  }
+}
